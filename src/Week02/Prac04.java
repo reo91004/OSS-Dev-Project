@@ -14,11 +14,11 @@ public class Prac04 {
         y = sc.nextInt();
         z = sc.nextInt();
 
-        if (x > y && y > z || x < y && y < z)
+        if (x > y && y > z || x < y && y < z) // 중간값 찾는 과정, y가 중간값
             System.out.println("중간 값은 " + y);
-        else if (y > x && x > z || y < x && x < z)
+        else if (y > x && x > z || y < x && x < z) // x가 중간값
             System.out.println("중간 값은 " + x);
-        else
+        else // 둘다 아니면 z가 중간값
             System.out.println("중간 값은 " + z);
 
         sc.close();

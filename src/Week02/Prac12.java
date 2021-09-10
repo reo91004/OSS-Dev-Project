@@ -13,7 +13,7 @@ public class Prac12 {
         y = sc.next();
         z = sc.nextDouble();
 
-        if (y.equals("+"))
+        if (y.equals("+")) // 주어진 힌트
             System.out.println(x + y + z + "의 계산 결과는 " + (x + z));
         else if (y.equals("-"))
             System.out.println(x + y + z + "의 계산 결과는 " + (x - z));

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Prac08 {
 
-    public static boolean inRect(int x, int y) {
+    public static boolean inRect(int x, int y) { // 주어진 알고리즘
         if ((x >= 100 && x <= 200) && (y >= 100 && y <= 200))
             return true;
         else
@@ -23,7 +23,7 @@ public class Prac08 {
         x2 = sc.nextInt();
         y2 = sc.nextInt();
 
-        if (inRect(x1, y1) && inRect(x2, y2))
+        if (inRect(x1, y1) && inRect(x2, y2)) // 함수로부터 True를 리턴받아 둘다 True면 충돌
             System.out.println("두 사각형이 충돌합니다.");
         else
             System.out.println("두 사각형이 충돌하지 않습니다.");

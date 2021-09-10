@@ -19,9 +19,9 @@ public class Prac10 {
         y2 = sc.nextInt();
         r2 = sc.nextDouble();
 
-        distance = Math.sqrt(((x1 - x2) * (x1 - x2)) + ((y1 - y2) * (y1 - y2)));
+        distance = Math.sqrt(((x1 - x2) * (x1 - x2)) + ((y1 - y2) * (y1 - y2))); // 피타고라스
 
-        if (distance <= r1 + r2)
+        if (distance <= r1 + r2) // 두 원의 중심의 차이가 반지름의 합보다 작으면 겹침
             System.out.println("두 원은 서로 겹친다.");
         else
             System.out.println("두 원은 서로 겹치지 않는다.");
