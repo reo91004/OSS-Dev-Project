@@ -3,7 +3,6 @@ package Week02;
 import java.util.Scanner;
 
 public class Prac02 {
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
@@ -19,7 +18,7 @@ public class Prac02 {
 			System.out.println("YES! 10의 자리와 1의 자리가 같습니다.");
 		else
 			System.out.println("NO! 10의 자리와 1의 자리가 다릅니다.");
-		
+
 		sc.close();
 	}
 

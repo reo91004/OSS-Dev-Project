@@ -17,11 +17,9 @@ public class Prac06 {
         System.out.print("박수");
         if (x % 3 == 0)
             System.out.print("짝");
-            
-        if (y == 0)
-        {
-        }
-        else if (y % 3 == 0)
+
+        if (y == 0) {
+        } else if (y % 3 == 0)
             System.out.print("짝");
 
         sc.close();
