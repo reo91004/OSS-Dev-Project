@@ -10,7 +10,6 @@ public class ex15 {
         String order = scanner.next();
 
         int price = 0;
-        System.err.println(order);
 
         switch (order) 
         {

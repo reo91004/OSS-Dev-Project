@@ -18,3 +18,4 @@ public class ex01 {
         System.out.println(s); // 정수 s 값 화면 출력
     }
 }
+    
