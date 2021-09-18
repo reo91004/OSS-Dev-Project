@@ -15,7 +15,7 @@ public class Prac08 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("정수 몇개?");
+        System.out.print("정수 몇개?>>");
         int n = sc.nextInt();
 
         if (0 <= n || n > 100) 
