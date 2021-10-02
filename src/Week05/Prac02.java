@@ -16,10 +16,6 @@ class Grade {
     public int average() {
         return (math + science + english) / 3;
     }
-
-    public static void sum(int math, int science, int english) {
-        System.out.println("합은 " + (math + science + english));
-    }
 }
 
 public class Prac02 {
@@ -33,7 +29,6 @@ public class Prac02 {
 
         Grade me = new Grade(math, science, english);
         System.out.println("평균은 " + me.average());
-        Grade.sum(math, science, english);
 
         sc.close();
     }
