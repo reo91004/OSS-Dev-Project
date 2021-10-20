@@ -55,7 +55,7 @@ public class Gamble2 {
 
                 System.out.println("아쉽군요!");
             }
-            sc.close();
+
         }
     }
 }
