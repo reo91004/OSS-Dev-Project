@@ -40,18 +40,18 @@ public class Prac10 {
         Vector<Shape> v = new Vector<Shape>();
 
         System.out.println("그래픽 에디터 beauty을 실행합니다.");
-        
-        while (state) 
+
+        while (state)
         {
             System.out.print("삽입(1), 삭제(2), 모두보기(3), 종료(4) >> ");
             int select = sc.nextInt();
 
-            switch (select) 
+            switch (select)
             {
                 case 1:
                     System.out.print("Line(1), Rect(2), Circle(3)>> ");
                     int num1 = sc.nextInt();
-                    if (num1 == 1) 
+                    if (num1 == 1)
                         v.add(new Line());
                     else if (num1 == 2)
                         v.add(new Rect());
@@ -69,7 +69,7 @@ public class Prac10 {
                         v.remove(pos);
                     break;
                 case 3:
-                    for (int i = 0; i < v.size(); i++) 
+                    for (int i = 0; i < v.size(); i++)
                     {
                         Shape shape = v.get(i);
                         shape.draw();
@@ -85,7 +85,7 @@ public class Prac10 {
         }
 
         System.out.println("beauty을 종료합니다.");
-        
+
         sc.close();
     }
 }
