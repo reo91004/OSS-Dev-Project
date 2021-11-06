@@ -8,7 +8,7 @@ public class ex02 {
         FileInputStream fin = null;
         try {
             fin = new FileInputStream("c:\\Temp\\hangul.txt");
-            in = new InputStreamReader(fin, "MS949");
+            in = new InputStreamReader(fin, "UTF-8");
             int c;
             System.out.println("인코딩 문자 집합은 " + in.getEncoding());
             while ((c = in.read()) != -1) {
