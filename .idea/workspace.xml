@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae820b2-ea7d-4759-803d-f4464b2fee43" name="Changes" comment="~Week10_1">
-      <change afterPath="$PROJECT_DIR$/src/Project/mainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week10_2/Prac04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week10_2/Prac06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week10_2/Prac08.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_1/Prac06.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_1/Prac06.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_1/Prac08.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_1/Prac08.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_1/Prac10.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_1/Prac10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_1/Prac12.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_1/Prac12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_1/Prac14.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_1/Prac14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_2/Prac02.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/Prac02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Week10_2/Prac02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Week10_2/Prac02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Week10_2/CenterPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/CenterPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Week10_2/NorthPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/NorthPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Week10_2/Prac08.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/Prac08.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Week10_2/SouthPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/SouthPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Week10_1/Example/ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Week10_1/Example/ex02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +50,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Prac08">
-    <configuration name="Prac02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week10_2.Prac02" />
-      <module name="OSS-Dev-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Week10_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ex02">
     <configuration name="Prac04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Week10_2.Prac04" />
       <module name="OSS-Dev-Project" />
@@ -109,12 +90,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Project.mainFrame" />
+    <configuration name="ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week10_1.Example.ex01" />
       <module name="OSS-Dev-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Project.*" />
+          <option name="PATTERN" value="Week10_1.Example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week10_1.Example.ex02" />
+      <module name="OSS-Dev-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Week10_1.Example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ex02" />
+        <item itemvalue="Application.ex01" />
         <item itemvalue="Application.Prac08" />
         <item itemvalue="Application.Prac06" />
         <item itemvalue="Application.Prac04" />
-        <item itemvalue="Application.mainFrame" />
-        <item itemvalue="Application.Prac02" />
       </list>
     </recent_temporary>
   </component>
