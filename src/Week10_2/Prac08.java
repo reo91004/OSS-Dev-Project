@@ -3,8 +3,8 @@ package Week10_2;
 import javax.swing.*;
 import java.awt.*;
 
-class NorthPanel extends JPanel {
-    public NorthPanel() {
+class upMenu extends JPanel {
+    public upMenu() {
         setBackground(Color.LIGHT_GRAY);
         setLayout(new FlowLayout());
         add(new JButton("열기"));
@@ -13,8 +13,8 @@ class NorthPanel extends JPanel {
     }
 }
 
-class CenterPanel extends JPanel {
-    public CenterPanel() {
+class showDots extends JPanel {
+    public showDots() {
         setLayout(null);
         for (int i = 0; i < 10; i++) {
             JLabel label = new JLabel("*");
@@ -30,8 +30,8 @@ class CenterPanel extends JPanel {
     }
 }
 
-class SouthPanel extends JPanel {
-    public SouthPanel() {
+class downMenu extends JPanel {
+    public downMenu() {
         setBackground(Color.YELLOW);
         setLayout(new FlowLayout());
 
@@ -46,9 +46,9 @@ public class Prac08 extends JFrame {
         backgroundPanel.setLayout(new BorderLayout());
         add(backgroundPanel);
 
-        backgroundPanel.add(new NorthPanel(), BorderLayout.NORTH);
-        backgroundPanel.add(new CenterPanel(),BorderLayout.CENTER);
-        backgroundPanel.add(new SouthPanel(), BorderLayout.SOUTH);
+        backgroundPanel.add(new upMenu(), BorderLayout.NORTH);
+        backgroundPanel.add(new showDots(),BorderLayout.CENTER);
+        backgroundPanel.add(new downMenu(), BorderLayout.SOUTH);
 
         setTitle("Prac08");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
