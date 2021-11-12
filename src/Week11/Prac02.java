@@ -1,2 +1,4 @@
-package Week11;public class Prac02 {
+package Week11;
+
+public class Prac02 {
 }

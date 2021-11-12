@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae820b2-ea7d-4759-803d-f4464b2fee43" name="Changes" comment="~Week10_1">
+      <change afterPath="$PROJECT_DIR$/src/Project/myMovie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Project/selectFavoriteMovie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Notepad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Week11/Prac02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Week10_2/Prac08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Week10_2/Prac08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Project/mainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Project/mainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Week10_1/Example/ex02.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_1/Example/ex02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Week10_2/Prac02.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/Prac02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Week10_2/Prac04.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/Prac04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Week10_2/Prac06.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/Prac06.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Project/mainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/mainFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,50 +61,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Prac08">
-    <configuration name="Prac02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week10_2.Prac02" />
-      <module name="OSS-Dev-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Week10_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Prac04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week10_2.Prac04" />
-      <module name="OSS-Dev-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Week10_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Prac06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week10_2.Prac06" />
-      <module name="OSS-Dev-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Week10_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ex07 (1)">
     <configuration name="Prac08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Week10_2.Prac08" />
       <module name="OSS-Dev-Project" />
@@ -99,12 +80,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ex06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week10_2.Example.ex06" />
+    <configuration name="ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week11.Example.ex01" />
       <module name="OSS-Dev-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Week10_2.Example.*" />
+          <option name="PATTERN" value="Week11.Example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ex07 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week11.Example.ex07" />
+      <module name="OSS-Dev-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Week11.Example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ex07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week10_1.Example.ex07" />
+      <module name="OSS-Dev-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Week10_1.Example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project.mainFrame" />
+      <module name="OSS-Dev-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ex07 (1)" />
+        <item itemvalue="Application.mainFrame" />
+        <item itemvalue="Application.ex01" />
+        <item itemvalue="Application.ex07" />
         <item itemvalue="Application.Prac08" />
-        <item itemvalue="Application.Prac06" />
-        <item itemvalue="Application.Prac04" />
-        <item itemvalue="Application.Prac02" />
-        <item itemvalue="Application.ex06" />
       </list>
     </recent_temporary>
   </component>
@@ -148,5 +168,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="~Week10_1" />
     <option name="LAST_COMMIT_MESSAGE" value="~Week10_1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="fin" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

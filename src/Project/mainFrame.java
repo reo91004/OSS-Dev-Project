@@ -2,6 +2,8 @@ package Project;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class mainFrame extends JFrame {
     public mainFrame() {
@@ -28,17 +30,34 @@ public class mainFrame extends JFrame {
         JButton menuNameMovie = new JButton("이름순 정렬");
         JButton menuRecommendMovie = new JButton("맞춤 추천");
         JButton menuMyMovie = new JButton("내 라이브러리");
-        JButton menuGoFirst = new JButton("처음으로");
+        JButton menuReAi = new JButton("맞춤 알고리즘 새로고침");
+
         menuPopularMovie.setPreferredSize(new Dimension(120, 40));
         menuNameMovie.setPreferredSize(new Dimension(120, 40));
         menuRecommendMovie.setPreferredSize(new Dimension(120, 40));
         menuMyMovie.setBounds(630, 400, 120, 40);
-        menuGoFirst.setBounds(630, 460, 120, 40);
+        menuReAi.setBounds(630, 460, 120, 40);
+
         showMenu.add(menuPopularMovie);
         showMenu.add(menuNameMovie);
         showMenu.add(menuRecommendMovie);
         backgroundPanel.add(menuMyMovie);
-        backgroundPanel.add(menuGoFirst);
+        backgroundPanel.add(menuReAi);
+
+        menuMyMovie.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new myMovie();
+                dispose();
+            }
+        });
+
+        menuReAi.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new selectFavoriteMovie();
+            }
+        });
 
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -49,6 +68,6 @@ public class mainFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        mainFrame start = new mainFrame();
+        new mainFrame();
     }
 }
