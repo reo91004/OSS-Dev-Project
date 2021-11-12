@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae820b2-ea7d-4759-803d-f4464b2fee43" name="Changes" comment="~Week10_1">
-      <change afterPath="$PROJECT_DIR$/src/Project/myMovie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Project/selectFavoriteMovie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex09.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Example/ex10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Notepad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week11/Prac02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Project/mainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Project/mainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_1/Example/ex02.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_1/Example/ex02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_2/Prac02.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/Prac02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_2/Prac04.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/Prac04.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Week10_2/Prac06.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Week10_2/Prac06.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Project/mainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/mainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Week11/Notepad.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +46,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager" selected="Application.ex07 (1)">
     <configuration name="Prac08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
