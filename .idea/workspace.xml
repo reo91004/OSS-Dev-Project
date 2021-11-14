@@ -86,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ex07 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week11.Example.ex07" />
+    <configuration name="ex09" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week11.Example.ex09" />
       <module name="OSS-Dev-Project" />
       <extension name="coverage">
         <pattern>
@@ -99,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Project.mainFrame" />
+    <configuration name="ex10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week11.Example.ex10" />
       <module name="OSS-Dev-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Project.*" />
+          <option name="PATTERN" value="Week11.Example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,8 +117,8 @@
         <item itemvalue="Application.Prac06" />
         <item itemvalue="Application.Prac04" />
         <item itemvalue="Application.Prac02" />
-        <item itemvalue="Application.mainFrame" />
-        <item itemvalue="Application.ex07 (1)" />
+        <item itemvalue="Application.ex10" />
+        <item itemvalue="Application.ex09" />
       </list>
     </recent_temporary>
   </component>

@@ -16,7 +16,6 @@ public class Prac04 extends JFrame {
 
         c.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent e) {
-                // TODO Auto-generated method stub
                 if (e.getKeyCode() == KeyEvent.VK_LEFT) {
                     String text = label.getText();
                     label.setText(text.substring(1) + text.charAt(0));
