@@ -1,27 +1,59 @@
-package Project;
+package com.company;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.Font;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.border.TitledBorder;
+import javax.swing.table.DefaultTableModel;
 
 public class mainFrame extends JFrame {
+
+    private DefaultTableModel dtmmovie;
+
+
     public mainFrame() {
         // 배경 패널 설정
         JPanel backgroundPanel = new JPanel();
         add(backgroundPanel);
         backgroundPanel.setLayout(null);
 
-        // 영화를 보여줄 패널 설정
+
+        String[] columnNames = new String[] { "번호", "이미지"};
+        dtmmovie = new DefaultTableModel(columnNames, 0) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+        };
+        JTable jtmoviecard = new JTable(dtmmovie) {
+
+            @Override
+            public Class<?> getColumnClass(int column) {
+                return getValueAt(0, column).getClass();
+            }
+        };
+
         JPanel showMovie = new JPanel();
         showMovie.setBounds(0, 0, 600, 500);
         showMovie.setBackground(Color.WHITE);
         backgroundPanel.add(showMovie);
 
-        // 메뉴를 보여줄 패널 설정
-        JPanel showMenu = new JPanel();
-        showMenu.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 30));
-        showMenu.setBounds(600, 0, 180, 400);
-        backgroundPanel.add(showMenu);
+
+
+        moviecontroller mc = new moviecontroller(this);
+        showMovie.add(jtmoviecard);
+        backgroundPanel.add(showMovie);
+
 
         // 버튼 생성, 메뉴에 넣도록 함
         // 선호하는 장르를 선택하도록 하는 버튼도 있어야 함
@@ -37,9 +69,7 @@ public class mainFrame extends JFrame {
         menuMyMovie.setBounds(630, 400, 120, 40);
         menuReAi.setBounds(630, 460, 120, 40);
 
-        showMenu.add(menuPopularMovie);
-        showMenu.add(menuNameMovie);
-        showMenu.add(menuRecommendMovie);
+
         backgroundPanel.add(menuMyMovie);
         backgroundPanel.add(menuReAi);
 
@@ -64,6 +94,10 @@ public class mainFrame extends JFrame {
         setResizable(false);
         setTitle("영화 추천 프로그램");
         setVisible(true);
+    }
+
+    public DefaultTableModel getDtmNamecard() {
+        return dtmmovie;
     }
 
     public static void main(String[] args) {
