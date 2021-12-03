@@ -41,12 +41,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Application.mainFrame">
+  <component name="RunManager" selected="Application.mainFrame (1)">
     <configuration name="Prac02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Week11.Prac02" />
       <module name="OSS-Dev-Project" />
@@ -86,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ex10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week11.Example.ex10" />
+    <configuration name="mainFrame (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.mainFrame" />
       <module name="OSS-Dev-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Week11.Example.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.mainFrame (1)" />
         <item itemvalue="Application.mainFrame" />
         <item itemvalue="Application.Prac06" />
         <item itemvalue="Application.Prac04" />
         <item itemvalue="Application.Prac02" />
-        <item itemvalue="Application.ex10" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Project/moviecontroller.java</url>
           <line>30</line>
-          <properties class="Project.moviecontroller" method="setAllNamecard">
+          <properties class="Project.moviecontroller">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />

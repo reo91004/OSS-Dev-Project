@@ -14,16 +14,22 @@ public class movieDAO {
     private Connection con;
     private PreparedStatement pstmt;
     private ResultSet rs;
-
+    private int flag;
     private movieDAO() {
     }
 
     public static movieDAO getInstance() {
+
         if (m_dao == null) {
             m_dao = new movieDAO();
         }
         return m_dao;
     }
+
+    public void getflag(int k){
+        this.flag = k;
+    }
+
 
     public  List<movieDTO> selectallmovie()throws SQLException {
 
@@ -34,17 +40,61 @@ public class movieDAO {
         String password = "password";
 
         con = DriverManager.getConnection(url, userName, password);
-        String getmoviecard =
-                "SELECT name, addr FROM moviecard "; //각 db 가져오기
-        pstmt = con.prepareStatement(getmoviecard);
-        rs = pstmt.executeQuery();
 
-        movieDTO m_dto = null;
-        while (rs.next()) {
-            m_dto = new movieDTO(rs.getString("name"),
-                    rs.getString("addr"));
-            list.add(m_dto);
+        if(flag == -1) {
+            String getmoviecard =
+                    "SELECT name,image,tag1,tag2,star,year FROM moviecard ORDER BY star ASC;"; //각 db 가져오기
+
+
+            pstmt = con.prepareStatement(getmoviecard);
+            rs = pstmt.executeQuery();
+            movieDTO m_dto = null;
+            while (rs.next()) {
+                m_dto = new movieDTO(rs.getString("name"),
+                        rs.getString("image"), rs.getString("tag1"),
+                        rs.getString("tag2"), rs.getFloat("star"),
+                        rs.getInt("year"));
+
+                list.add(m_dto);
+            }
         }
+        else {
+            if( flag == 0){ //이름순정렬
+                String getmoviecard =
+                        "SELECT name,image,tag1,tag2,star,year FROM moviecard ORDER BY name ASC;"; //각 db 가져오기
+
+
+                pstmt = con.prepareStatement(getmoviecard);
+                rs = pstmt.executeQuery();
+                movieDTO m_dto = null;
+                while (rs.next()) {
+                    m_dto = new movieDTO(rs.getString("name"),
+                            rs.getString("image"), rs.getString("tag1"),
+                            rs.getString("tag2"), rs.getFloat("star"),
+                            rs.getInt("year"));
+
+                    list.add(m_dto);
+                }
+            }
+            else if(flag == 1){ //인기순 정렬
+                String getmoviecard =
+                        "SELECT name,image,tag1,tag2,star,year FROM moviecard ORDER BY star ASC;"; //각 db 가져오기
+
+
+                pstmt = con.prepareStatement(getmoviecard);
+                rs = pstmt.executeQuery();
+                movieDTO m_dto = null;
+                while (rs.next()) {
+                    m_dto = new movieDTO(rs.getString("name"),
+                            rs.getString("image"), rs.getString("tag1"),
+                            rs.getString("tag2"), rs.getFloat("star"),
+                            rs.getInt("year"));
+
+                    list.add(m_dto);
+                }
+            }
+        }
+
         close();
         return list;
     }
