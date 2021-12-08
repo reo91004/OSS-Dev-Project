@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.sql.SQLException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -26,7 +29,7 @@ public class mainFrame extends JFrame {
         backgroundPanel.setLayout(null);
         add(backgroundPanel);
 
-// 영화 목록을 보여줄 기능
+        // 영화 목록을 보여줄 기능
         String[] columnNames = new String[] { "번호", "이미지" ,"태그1" , "태그2" , "별" ,"연도"};
         // dtmovie를 직접 수정할 수 없도록 함
         dtmmovie = new DefaultTableModel(columnNames, 0) {
@@ -63,7 +66,7 @@ public class mainFrame extends JFrame {
 
         moviecontroller mc = new moviecontroller(this);
         showMovie.add(showjtmoviecard);
-        
+
         // 메뉴를 보여줄 패널 설정
         JPanel showMenu = new JPanel();
         showMenu.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 30));
@@ -89,7 +92,7 @@ public class mainFrame extends JFrame {
         showMenu.add(menuRecommendMovie);
         backgroundPanel.add(menuMyMovie);
         backgroundPanel.add(menuReAi);
-        
+
         // ~버튼 생성, 메뉴에 넣음
 
         menuMyMovie.addActionListener(new ActionListener() {
@@ -130,6 +133,8 @@ public class mainFrame extends JFrame {
                 showMovie.add(showjtmoviecard);
             }
         });
+        // 테이블 우클릭 시 라이브러리 저장 여부 메뉴 띄우기
+        jtmoviecard.addMouseListener(new MyMouseListener());
 
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -142,7 +147,46 @@ public class mainFrame extends JFrame {
     public DefaultTableModel getDtmNamecard() {
         return dtmmovie;
     }
-    public int getFlag(){return flag;}
+
+    public int getFlag() {
+        return flag;
+    }
+
+    private class MyMouseListener extends MouseAdapter {
+        public void mouseClicked(MouseEvent e) {
+            if (e.getButton() == 3) { // 우클릭시
+                PopupMenu pm = new PopupMenu();
+                MenuItem menu1 = new MenuItem("라이브러리 추가");
+                MenuItem menu2 = new MenuItem("라이브러리 제거");
+
+                pm.add(menu1);
+                pm.addSeparator();
+                pm.add(menu2);
+
+                add(pm);
+
+                JTable t = (JTable) e.getSource();
+                int row = t.getSelectedRow();
+                if (row != -1) { // 셀이 선택되었을 때 메뉴 보여짐
+                    pm.show(mainFrame.this, e.getX(), e.getY());
+                    menu1.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            try {
+                                modifymyMovie temp = new modifymyMovie(String.valueOf(t.getValueAt(t.getSelectedRow(), 0)), String.valueOf(t.getValueAt(t.getSelectedRow(), 1)),
+                                        String.valueOf(t.getValueAt(t.getSelectedRow(), 2)),String.valueOf(t.getValueAt(t.getSelectedRow(), 3)),
+                                        String.valueOf(t.getValueAt(t.getSelectedRow(), 4)), String.valueOf(t.getValueAt(t.getSelectedRow(), 5)));
+                                temp.modify();
+                            } catch (SQLException s) {
+                                s.printStackTrace();
+                            }
+                        }
+                    });
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         new mainFrame();
     }

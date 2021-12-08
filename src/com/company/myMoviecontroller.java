@@ -9,13 +9,17 @@ import javax.swing.JOptionPane;
 public class myMoviecontroller extends WindowAdapter {
 
 	private myMovie my;
+//	private review re;
 	private myMovieDAO my_dao;
 	
 	public myMoviecontroller(myMovie my) {
 		this.my = my;
+	//	this.re =re;
+		//this.re= re;
 		my_dao = myMovieDAO.getInstance();
 		setmyNamecard();
 	}
+
 
 	private void setmyNamecard() {
 

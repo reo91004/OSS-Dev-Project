@@ -3,12 +3,19 @@ package com.company;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class myMovie extends  JFrame{
     private DefaultTableModel dtmmyMovielist;
+    JTextArea ta = new JTextArea();
+    myMovieDAO dao = new myMovieDAO();
+
+    JTextField t1 = new JTextField();
+    JTextField t2 = new JTextField();
+
 
     public myMovie() {
         // 배경 패널 생성
@@ -54,6 +61,11 @@ public class myMovie extends  JFrame{
         myMoviecontroller my = new myMoviecontroller(this);
         showMovie.add(showjtmymoviecard);
         
+        // 리뷰관리 버튼 생성, 삽입
+        JButton btnReview =  new JButton("리뷰작성");
+        btnReview.setBounds(630, 400, 120, 40);
+        backgroundPanel.add(btnReview);
+        
         // 뒤로가기 버튼 생성, 삽입
         JButton btnBack =  new JButton("뒤로가기");
         btnBack.setBounds(630, 460, 120, 40);
@@ -67,11 +79,20 @@ public class myMovie extends  JFrame{
                 dispose();
             }
         });
+        
+        // 리뷰 화면으로 가기 위한 메소드
+        btnReview.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	review reStar = new review();
+            	dispose();
+             }
+        });
 
         setSize(800, 600);
         setLocationRelativeTo(null); // 중앙에 배치
         setResizable(false);
-        setTitle("내 영화");
+        setTitle("라이브러리");
         setVisible(true);
     }
 
